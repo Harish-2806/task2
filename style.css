@@ -1,0 +1,230 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  overflow:hidden;
+  color:white;
+  background-color: black;
+  margin:0;
+}
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.5rem;
+}
+.sidebar{
+    background-color:black;
+    width:340px;
+    border-radius: 1rem;
+    margin-right: 0.75rem;
+}
+.maincontent{
+    background-color:#121212;
+    flex:1;
+    border-radius: 1rem;
+    padding:0 1.5rem 0 1.5rem;
+    overflow:auto;
+}
+.musicplayer{
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    height:72px;
+    width:100%;
+}
+.nav{
+   background-color:#121212;
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    border-radius: 1rem;
+    height:100px;
+    padding:0.5rem 0.75rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.navop{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding:0.5rem 0.75rem;
+}
+.navop:hover{
+    opacity: 1;
+}
+.navop i{
+    font-size: 1.25 rem;
+}
+.navop a{
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.lib{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding:0.5rem 0.75 rem;
+    margin-top: 0.5rem;
+}
+.options{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.libop img{
+    height:1.25rem;
+    width:1.25rem;
+}
+.icons{
+    display:flex;
+    font-size: 1.25rem;
+}
+.icons i{
+    opacity:0.5;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+.box{
+    background-color: #232323;
+    border-radius: 1rem;
+    height:8rem;
+    margin:1rem 0 2rem 0;
+    padding:0.75rem 1rem;
+
+}
+.boxp1{
+    font-size:1rem;
+    font-weight: 500;
+}
+.boxp2{
+    font-size:0.85rem;
+    opacity:0.9rem;
+}
+.badge{
+    background-color: white;
+    font-weight: 700;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    height:2rem;
+    margin-top: 0.25rem;
+    width: fit-content;
+}
+.stickynav{
+    position:sticky;
+    background-color: #121212;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+    z-index: 10;
+}
+.stickyicon{
+    margin-left: 1.5rem;
+}
+.stickyop{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.stickyop button{
+    margin-right: 0.75rem;
+}
+.dark{
+    background-color: #121212;
+    color:white;
+}
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+.card{
+    background-color: #232323;
+    width:150px;
+    border-radius:0.5rem;
+    padding:1rem;
+    margin-left: 1.5rem;
+}
+.card-con{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width:100%;
+    border-radius:0.25rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.5;
+
+}
+.footer{
+    height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    height:50%;
+    border-top: 1px solid white;
+}
+.musicplayer{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.album{
+    width:25%;
+}
+.control{
+    width:50%;
+}
+.player{
+    width:25%;
+}
+.player-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    margin-top: 1rem;
+}
+.playercontrol{
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    opacity: 0.7;
+}
+.playercontrol:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height:0.2rem;
+    border-radius: 100px;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:1rem;
+    width:1rem;
+    background-color:#1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
